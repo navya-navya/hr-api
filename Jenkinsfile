@@ -4,7 +4,7 @@ pipeline {
     
     environment {
       TOMCAT_DEV = "172.31.49.161"
-      TOMCAT_USER = "ec2-user"
+      TOMCAT_USER = "ec2-"
     }
     parameters {
       string defaultValue: 'main', description: 'Chose branch to build and deploy', name: 'branchName'
