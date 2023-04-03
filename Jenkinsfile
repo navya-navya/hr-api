@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('git checkout') {
-            steps {
-                git branch: 'main', credentialsId: 'creds', url: 'https://github.com/navya-navya/hr-api'
-            }
-        }
-        
       stage('maven build') {
             steps {
                 sh 'mvn clean package'
