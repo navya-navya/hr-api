@@ -3,7 +3,7 @@ pipeline {
     stages {   
          stage('Git Checkout') {
             steps {
-                echo "${params}"
+                echo "${params.branchname}"
                 git branch: 'main', credentialsId: 'github-tokens', url: 'https://github.com/javahometech/hr-api'
             }
         }
