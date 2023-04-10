@@ -6,7 +6,7 @@ RUN apk add openjdk-17-jre
 # create working directory for tomcat
 WORKDIR /opt
 # add tomcat9 link
-ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz.asc
+ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz.asc .
 # unzip tomcat file
 RUN tar xf apache-tomcat-9.0.73.tar.gz.asc
 # remove zip file
