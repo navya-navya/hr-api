@@ -2,7 +2,7 @@ FROM alpine:3.17.3
 LABEL AUTHOR="navya"
 LABEL EMAIL="mannepallinavya06@gmail.com"
 # install java version
-RUN apk add openjdk-17-jre
+RUN apk add openjdk17-jre
 # create working directory for tomcat
 WORKDIR /opt
 # add tomcat9 link
