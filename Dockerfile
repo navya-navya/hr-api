@@ -19,5 +19,3 @@ COPY target/hr-api.war /opt/tomcat9/webapps
 EXPOSE 8080
 
 CMD ["/opt/tomcat9/bin/catalina.sh", "run"]
-
-
